@@ -1,0 +1,26 @@
+  <nav class="blue darken">
+    <div class="nav-wrapper">
+        <a href="/" class="brand-logo">TODOS</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        
+            <li {{#if isIndex }} class="active" {{/if}}>
+                <a href="/">todos</a>
+            </li>
+        
+            <li {{#if isCreate }} class="active" {{/if}}>
+                <a href="/create">create</a>
+            </li>
+        
+            <li {{#if isNews }} class="active" {{/if}}>
+                <a href="/news">News</a>
+            </li>
+        
+            <li {{#if isGallery }} class="active" {{/if}}>
+                <a href="/gallery">Gallery</a>
+            </li>
+
+            <li><a href="sass.html">Sass</a></li>
+
+        </ul>
+    </div>
+  </nav>

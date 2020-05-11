@@ -1,0 +1,26 @@
+.flex {
+    display: flex;
+}
+
+.todo {
+    margin-bottom: 1rem;
+}
+.todo span.completed {
+    text-decoration: line-through;
+}
+.todo label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: wheat;
+    padding: 1rem;
+}
+.todo i {
+    z-index: 2;
+}
+.date-task {
+    border-bottom: 1px solid #d8d0d0;
+    justify-content: space-between;
+}

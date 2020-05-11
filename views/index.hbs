@@ -1,0 +1,39 @@
+<h3>Список задач</h3>
+{{#if modelTodosArr.length }}
+
+    <ul>
+        {{#each modelTodosArr }}
+            <form action="complete" method="POST">
+                <li class="todo " >
+                    
+                    <label {{#if completed }} class="cyan accent-1" {{/if }}>
+                            <input type="checkbox" name="completed" {{#if completed }} checked {{/if }}>
+                            <span {{#if completed }} class="completed" {{/if }} >
+                                {{ title }}
+                            </span>
+
+                        {{!-- {{#if completed }}
+                            <input type="checkbox" checked name="completed">
+                            <span class="completed">{{ title }}</span>
+                        {{else }}
+                            <input type="checkbox" name="completed">
+                            <span>{{ title }}</span>
+                        {{/if }} --}}
+                        
+                        <input type="hidden" value="{{_id}}" name="id">
+                        <div>
+                            <button type="submit" class=" btn btn-small">Сохранить</button>
+                            <button type="submit" class="btn-small material-icons pink accent-1">clear</button>
+                        </div>
+                        
+                    </label>
+                    <div class="flex date-task"><span>{{ date }}</span> <span>{{ keyDate }}</span></div>
+                    
+                </li>
+            </form>
+        {{/each }}
+    </ul>
+
+{{else}}
+    <p>Список пуст</p>
+{{/if}}
