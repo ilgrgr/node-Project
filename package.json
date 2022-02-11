@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",           // обработчик запросов
-    "express-handlebars": "^4.0.4", // HTML движок
+    "express-handlebars": "^5.3.1", // HTML движок
     "mongoose": "^5.9.12"   // отвечает за работу с базой данных
   },
   "devDependencies": {
